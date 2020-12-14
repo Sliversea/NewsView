@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="auto">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/src/live/agsea/auto" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+    <jarDirectory url="file://$PROJECT_DIR$/src/live/agsea/auto" recursive="false" />
+  </library>
+</component>

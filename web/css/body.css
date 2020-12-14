@@ -1,0 +1,132 @@
+#body{
+    width: 984px;
+    margin: 5% auto;
+
+
+}
+h1{
+    margin-bottom: 30px;
+}
+
+a{
+
+    text-decoration: none;
+    outline: none;
+    color: black;
+    font-size: 14px;
+}
+a:hover{
+    color: darkred;
+    text-decoration: none;
+}
+img{
+    width: 165px;
+    height: 97px;
+}
+#more{
+    position: absolute;
+    right: 480px;
+}
+#myTabContent{
+    border-style:solid;
+    border-width:1px;
+    border-color: #ccc9af;
+    width: 984px;
+    float: left;
+
+}
+
+/*.content {*/
+    /*display: flex;*/
+    /*!*overflow: hidden;*!*/
+    /*!*text-overflow: ellipsis;*!*/
+
+/*}*/
+
+.left{
+    margin-top: 30px;
+    width: 45%;
+    float: left;
+    margin-left: 25px;
+}
+.right{
+    margin-top: 30px;
+    width: 45%;
+    float: left;
+    margin-left: 45px;
+}
+.left-top-left{
+    float: left;
+    width: 200px;
+    height: 120px;
+    /*background-color: red;*/
+    flex: 1;
+    margin: 10px 0 10px 10px  ;
+
+}
+.right-top-left{
+    float: left;
+    width: 200px;
+    height: 120px;
+    /*background-color: red;*/
+    flex: 1;
+    margin: 10px 0 10px 10px  ;
+
+}
+
+.right-top-right {
+    flex: 1;
+
+    margin-top: 10px;
+}
+
+.left-top-right {
+    flex: 1;
+
+    margin-top: 10px;
+
+}
+.right-top{
+    border-bottom-style:dotted;
+    border-width: 1px;
+    margin-bottom: 10px;
+    display: flex;
+}
+.left-top{
+    border-bottom-style:dotted;
+    border-width: 1px;
+    margin-bottom: 10px;
+    display: flex;
+}
+.top-right{
+    font-weight: bold;
+    /*width: 200px;*/
+    text-overflow: ellipsis;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    word-break: break-all;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    /*white-space:nowrap;*/
+
+}
+.top-center{
+    color: #858585;
+    font-size: 12px;
+    margin-top: 10px;
+    -webkit-box-orient: vertical;
+    /*width: 200px;*/
+    text-overflow: ellipsis;
+    overflow: hidden;
+    word-break: break-all;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+
+
+}
+.top-bottom{
+    color: red;
+}
+.left-bottom{
+    float: left;
+}
