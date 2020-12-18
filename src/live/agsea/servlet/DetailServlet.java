@@ -10,6 +10,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
+import java.sql.SQLException;
 
 public class DetailServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -20,7 +21,12 @@ public class DetailServlet extends HttpServlet {
 
         String id = request.getParameter("id");
         NewsDao newsDao =new NewsDao();
-        News news = newsDao.getDetails(id);
+        News news = null;
+        try {
+            news = newsDao.getDetails(id);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
         HttpSession session = request.getSession();
 //        System.out.println(id);
 //        System.out.println(news);

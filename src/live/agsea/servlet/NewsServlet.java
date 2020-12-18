@@ -1,5 +1,6 @@
 package live.agsea.servlet;
 
+import live.agsea.dao.NewsDao;
 import live.agsea.pojo.News;
 import live.agsea.utils.DBUtils;
 
@@ -27,24 +28,10 @@ public class NewsServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
 
-        Connection connection = null;
-        PreparedStatement preparedStatement = null;
-        String sql = "select * from news";
-        List<News> list = new ArrayList<News>();
-        ResultSet resultSet = null;
+        NewsDao newsDao = new NewsDao();
+        List<News> list = null;
         try {
-            connection = DBUtils.getConnection();
-            preparedStatement = connection.prepareStatement(sql);
-            resultSet = preparedStatement.executeQuery();
-            while (resultSet.next()){
-                News news = new News();
-                news.setId(resultSet.getInt("id"));
-                news.setTitle(resultSet.getString("title"));
-                news.setTime(resultSet.getDate("time"));
-                news.setImages(resultSet.getString("images"));
-                news.setContent(resultSet.getString("content"));
-                list.add(news);
-            }
+            list = newsDao.getNews();
         } catch (SQLException e) {
             e.printStackTrace();
         }
