@@ -13,6 +13,19 @@ public class News {
 
     private String content;
 
+    public News(Integer id, String title, Date time, String images, String content) {
+        this.id=id;
+        this.time = time;
+        this.title = title;
+        this.images = images;
+        this.content = content;
+    }
+
+    public News() {
+        super();
+    }
+
+
     public Integer getId() {
         return id;
     }

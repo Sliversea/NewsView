@@ -1,0 +1,34 @@
+#body{
+    width: 984px;
+    margin: 5% auto;
+
+
+}
+#title{
+    text-align: center;
+    font-weight: bold;
+
+
+}
+#time{
+    text-align: center;
+    color: #858585;
+}
+
+#images{
+    text-align: center;
+
+}
+#content{
+    text-indent:2em;
+    font-size: 14px;
+    letter-spacing: 2px;
+    line-height: 20px;
+
+    /*white-space: pre;*/
+}
+
+pre{
+    white-space:pre-wrap; /* css3.0 */
+
+}

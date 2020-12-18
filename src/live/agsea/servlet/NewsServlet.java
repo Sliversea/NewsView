@@ -38,6 +38,7 @@ public class NewsServlet extends HttpServlet {
             resultSet = preparedStatement.executeQuery();
             while (resultSet.next()){
                 News news = new News();
+                news.setId(resultSet.getInt("id"));
                 news.setTitle(resultSet.getString("title"));
                 news.setTime(resultSet.getDate("time"));
                 news.setImages(resultSet.getString("images"));

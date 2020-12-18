@@ -45,7 +45,7 @@
                                     <span class="top-right">${newslist[0].title}</span>
                                     <span class="top-center">${newslist[0].content}</span>
                                 </div>
-                                <span><a href="#" class="top-bottom">[详情]</a></span>
+                                <span><a href="DetailServlet?id=${newslist[0].id}" class="top-bottom">[详情]</a></span>
                             </div>
                         </div>
 
@@ -54,27 +54,11 @@
                     <div class="left-bottom">
 
 
-                        <ul>
-                            <li><a href="">${newslist[1].title}</a></li>
-                        </ul>
-                        <ul>
-                            <li><a href="">${newslist[2].title}</a></li>
-                        </ul>
-                        <ul>
-                            <li><a href="">${newslist[3].title}</a></li>
-                        </ul>
-                        <ul>
-                            <li><a href="">${newslist[4].title}</a></li>
-                        </ul>
-                        <ul>
-                            <li><a href="">${newslist[5].title}</a></li>
-                        </ul>
-                        <ul>
-                            <li><a href="">${newslist[6].title}</a></li>
-                        </ul>
-                        <ul>
-                            <li><a href="">${newslist[7].title}</a></li>
-                        </ul>
+                        <c:forEach var="list" items="${sessionScope.newslist}" begin="1" end="7">
+                            <ul>
+                                <li><a href="DetailServlet?id=${list.id}">${list.title}</a></li>
+                            </ul>
+                        </c:forEach>
 
 
 
@@ -91,7 +75,7 @@
                                     <span class="top-right">${newslist[8].title}</span>
                                     <span class="top-center">${newslist[8].content}</span>
                                 </div>
-                                <span><a href="#" class="top-bottom">[详情]</a></span>
+                                <span><a href="DetailServlet?id=${newslist[8].id}" class="top-bottom">[详情]</a></span>
                             </div>
                         </div>
                     </div>
@@ -100,25 +84,25 @@
 
 
                         <ul>
-                            <li><a href="">${newslist[9].title}</a></li>
+                            <li><a href="DetailServlet?id=${newslist[9].id}">${newslist[9].title}</a></li>
                         </ul>
                         <ul>
-                            <li><a href="">${newslist[10].title}</a></li>
+                            <li><a href="DetailServlet?id=${newslist[10].id}">${newslist[10].title}</a></li>
                         </ul>
                         <ul>
-                            <li><a href="">${newslist[11].title}</a></li>
+                            <li><a href="DetailServlet?id=${newslist[11].id}">${newslist[11].title}</a></li>
                         </ul>
                         <ul>
-                            <li><a href="">${newslist[12].title}</a></li>
+                            <li><a href="DetailServlet?id=${newslist[12].id}">${newslist[12].title}</a></li>
                         </ul>
                         <ul>
-                            <li><a href="">${newslist[13].title}</a></li>
+                            <li><a href="DetailServlet?id=${newslist[13].id}">${newslist[13].title}</a></li>
                         </ul>
                         <ul>
-                            <li><a href="">${newslist[14].title}</a></li>
+                            <li><a href="DetailServlet?id=${newslist[14].id}">${newslist[14].title}</a></li>
                         </ul>
                         <ul>
-                            <li><a href="">${newslist[15].title}</a></li>
+                            <li><a href="DetailServlet?id=${newslist[15].id}">${newslist[15].title}</a></li>
                         </ul>
 
 
@@ -143,7 +127,7 @@
                                 <span class="top-right">右边面板</span>
                                 <span class="top-center">${newslist[0].content}</span>
                             </div>
-                            <span><a href="#" class="top-bottom">[详情]</a></span>
+                            <span><a href="DetailServlet?id=${newslist[0].id}" class="top-bottom">[详情]</a></span>
                         </div>
                     </div>
 
@@ -152,27 +136,11 @@
                 <div class="left-bottom">
 
 
-                    <ul>
-                        <li><a href="">${newslist[1].title}</a></li>
-                    </ul>
-                    <ul>
-                        <li><a href="">${newslist[2].title}</a></li>
-                    </ul>
-                    <ul>
-                        <li><a href="">${newslist[3].title}</a></li>
-                    </ul>
-                    <ul>
-                        <li><a href="">${newslist[4].title}</a></li>
-                    </ul>
-                    <ul>
-                        <li><a href="">${newslist[5].title}</a></li>
-                    </ul>
-                    <ul>
-                        <li><a href="">${newslist[6].title}</a></li>
-                    </ul>
-                    <ul>
-                        <li><a href="">${newslist[7].title}</a></li>
-                    </ul>
+                    <c:forEach var="list" items="${sessionScope.newslist}" begin="1" end="7">
+                        <ul>
+                            <li><a href="DetailServlet?id=${list.id}">${list.title}</a></li>
+                        </ul>
+                    </c:forEach>
 
 
 
@@ -189,7 +157,7 @@
                                 <span class="top-right">${newslist[8].title}</span>
                                 <span class="top-center">${newslist[8].content}</span>
                             </div>
-                            <span><a href="#" class="top-bottom">[详情]</a></span>
+                            <span><a href="DetailServlet?id=${newslist[8].id}" class="top-bottom">[详情]</a></span>
                         </div>
                     </div>
                 </div>
@@ -197,27 +165,11 @@
                 <div>
 
 
-                    <ul>
-                        <li><a href="">${newslist[9].title}</a></li>
-                    </ul>
-                    <ul>
-                        <li><a href="">${newslist[10].title}</a></li>
-                    </ul>
-                    <ul>
-                        <li><a href="">${newslist[11].title}</a></li>
-                    </ul>
-                    <ul>
-                        <li><a href="">${newslist[12].title}</a></li>
-                    </ul>
-                    <ul>
-                        <li><a href="">${newslist[13].title}</a></li>
-                    </ul>
-                    <ul>
-                        <li><a href="">${newslist[14].title}</a></li>
-                    </ul>
-                    <ul>
-                        <li><a href="">${newslist[15].title}</a></li>
-                    </ul>
+                    <c:forEach var="list" items="${sessionScope.newslist}" begin="9" end="15">
+                        <ul>
+                            <li><a href="DetailServlet?id=${list.id}">${list.title}</a></li>
+                        </ul>
+                    </c:forEach>
 
 
                 </div>

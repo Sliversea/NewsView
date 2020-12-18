@@ -16,4 +16,13 @@
         <servlet-name>NewsServlet</servlet-name>
         <url-pattern>/NewsServlet</url-pattern>
     </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>DetailServlet</servlet-name>
+        <servlet-class>live.agsea.servlet.DetailServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DetailServlet</servlet-name>
+        <url-pattern>/DetailServlet</url-pattern>
+    </servlet-mapping>
 </web-app>
